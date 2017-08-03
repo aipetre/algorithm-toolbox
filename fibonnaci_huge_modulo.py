@@ -1,7 +1,7 @@
 # Uses python3
 import sys
 
-def get_pisano_period2(modulo):
+def get_pisano_period(modulo):
     a = 0
     b = 1
     c = a + b
@@ -30,7 +30,7 @@ def get_fibonacii_modulo(n, m):
     if n <= 1:
         return n
 
-    k = get_pisano_period2(m)
+    k = get_pisano_period(m)
     fib_value = get_fibonacci(n % k)
 
     return fib_value % m
