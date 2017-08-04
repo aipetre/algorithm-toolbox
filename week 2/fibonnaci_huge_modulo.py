@@ -1,6 +1,11 @@
 # Uses python3
+# 5 Advanced Problem: Huge Fibonacci Number modulo m
 import sys
 
+"""
+Calculates the Pisano period for a number
+@see https://en.wikipedia.org/wiki/Pisano_period
+"""
 def get_pisano_period(modulo):
     a = 0
     b = 1
@@ -25,7 +30,9 @@ def get_fibonacci(n):
 
     return current
 
-
+"""
+Calculates Fibonnaci(n) % m
+"""
 def get_fibonacii_modulo(n, m):
     if n <= 1:
         return n

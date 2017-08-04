@@ -1,7 +1,10 @@
 # Uses python3
+
 import sys
 
-
+"""
+Copied from fibonnaci_huge_modulo.py
+"""
 def get_pisano_period(modulo):
     a = 0
     b = 1
@@ -14,6 +17,9 @@ def get_pisano_period(modulo):
             return i + 1
 
 
+"""
+Coppied from fibonnaci_last_digit.py
+"""
 def get_fibonacci_last_digit(n):
     if n <= 1:
         return n

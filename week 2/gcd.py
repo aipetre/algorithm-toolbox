@@ -1,6 +1,12 @@
 #Uses python3
+# 3 Problem: Greatest Common Divisor
+
 import sys
 
+"""
+Calculates the gcd using Euclid's algorithm
+@see https://en.wikipedia.org/wiki/Euclidean_algorithm
+"""
 def euclidGcd(a, b):
     if (b == 0):
         return a

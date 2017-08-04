@@ -1,6 +1,10 @@
 # Uses python3
+# 4 Problem: Least Common Multiple
 import sys
 
+"""
+Copied from gcm.py
+"""
 def euclid_gcd(a, b):
     if (b == 0):
         return a
@@ -8,7 +12,9 @@ def euclid_gcd(a, b):
     aprime = a % b
     return euclid_gcd(b, aprime)
 
-
+"""
+The lcm of 2 numbers is their product divided by their gcd
+"""
 def lcm_fast (a, b):
     lcm = ((a*b) // euclid_gcd(a, b))
     return lcm

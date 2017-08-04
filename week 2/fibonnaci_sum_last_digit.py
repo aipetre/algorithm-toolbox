@@ -1,6 +1,10 @@
 # Uses python3
+#6 Advanced Problem: Sum of Fibonacci Numbers
 import sys
 
+"""
+Copied from fibonnaci_huge_modulo.py
+"""
 def get_pisano_period(modulo):
     a = 0
     b = 1
@@ -9,9 +13,13 @@ def get_pisano_period(modulo):
         c = (a + b) % modulo
         a = b
         b = c
-        if (a == 0 and b == 1):
+        if a == 0 and b == 1:
             return i + 1
 
+
+"""
+Coppied from fibonnaci_last_digit.py
+"""
 def get_fibonacci_last_digit(n):
     if n <= 1:
         return n

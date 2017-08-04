@@ -1,4 +1,10 @@
 # Uses python3
+# 1 Problem: Small Fibonacci Number
+
+"""
+Calculates n Fibonnaci number
+Note: We don't need a list, we could have just used 2 variable
+"""
 def fib_table(n):
     if (n <= 1):
         return n

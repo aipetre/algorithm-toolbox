@@ -1,4 +1,9 @@
 # Uses python3
+# 2 Problem: Last Digit of a Large Fibonacci Number
+
+"""
+    Calculates the last digit of a large Fibonnaci number
+"""
 def get_fibonacci_last_digit(n):
     if n <= 1:
         return n
