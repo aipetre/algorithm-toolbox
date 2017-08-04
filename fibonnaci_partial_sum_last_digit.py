@@ -44,12 +44,9 @@ def fibonacci_last_digit_of_sum(n, p):
 
 def fibonnaci_partial_sum_last_digit(from_, to):
     retValue = 0
-    if (from_ == to):
-        retValue = fibonacci_last_digit_of_sum(from_, 10)
-    else:
-        fromValue = fibonacci_last_digit_of_sum(from_ - 1, 10)
-        toValue = 10 + fibonacci_last_digit_of_sum(to, 10)
-        retValue = (toValue - fromValue) % 10
+    fromValue = fibonacci_last_digit_of_sum(from_ - 1, 10)
+    toValue = 10 + fibonacci_last_digit_of_sum(to, 10)
+    retValue = (toValue - fromValue) % 10
 
     return retValue
 
