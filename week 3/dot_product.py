@@ -1,7 +1,6 @@
 #Uses python3
 # 3 Problem: Maximizing Revenue in Online Ad Placement
 import sys
-from collections import OrderedDict
 
 def max_dot_product(a, b):
     #write your code here
