@@ -1,5 +1,5 @@
 # Uses python3
-# 5 Problem: Maximizing the Number of Prize Places in a Competi- tion
+# 5 Problem: Maximizing the Number of Prize Places in a Competition
 import sys
 
 def get_summand(k, l):
