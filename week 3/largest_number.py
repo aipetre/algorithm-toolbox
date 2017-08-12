@@ -11,7 +11,7 @@ def is_greater_or_equal(checkDigit, maxDigit):
 
 def largest_number(numbers):
     #write your code here
-    res = ""
+    res = ""  
     while len(numbers):
         maxD = '0'
         for x in numbers:
