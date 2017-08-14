@@ -4,7 +4,7 @@ import sys
 
 def get_frequency(a, left, right, el1):
     count = 0
-    for i in range(left, right):
+    for i in range(left, right + 1):
         if a[i] == el1:
             count +=1
 
@@ -12,16 +12,17 @@ def get_frequency(a, left, right, el1):
 
 
 def get_majority_element(a, left, right):
-    if left == right:
-        return a[left]
     if left > right:
         return -1
+
+    if left == right:             
+        return a[left]
     
-    mid = left + (left + right) // 2
+    mid = ((right - left) // 2) + left
     lower = get_majority_element(a, left, mid)
     upper = get_majority_element(a, mid + 1, right)
     
-    majority_count = (right - left) // 2
+    majority_count = (right - left + 1) // 2
 
     if lower == -1 and upper != -1:
         num = get_frequency(a, left, right, upper)
@@ -55,7 +56,7 @@ def get_majoirty_element_fast(a):
 if __name__ == '__main__':
     input = sys.stdin.read()
     n, *a = list(map(int, input.split()))
-    if get_majority_element(a, 0, n) != -1:
+    if get_majority_element(a, 0, len(a) - 1) != -1:
         print(1)
     else:
         print(0)
